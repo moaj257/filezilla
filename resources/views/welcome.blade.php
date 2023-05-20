@@ -8,11 +8,17 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Laravel 10 App</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
+    <h1>Laravel 10 Test App</h1>
+    <h5>By <a href="https://github.com/ppmint1" target="_blank">@ppmint1</a>, intended to be used as infrastructure testing.</h5>
+    <h5>Source code publicly available here at  <a href="https://github.com/ppmint1/laravel-test" target="_blank"https://github.com/ppmint1/laravel-test</a>, intended to be used as infrastructure testing.</h5>
+    <p>Server IP : <string>{{ request()->server('SERVER_ADDR') }}</strong></p>
+    <p>Your IP : <string>{{ request()->ip() }}</strong><br>Your IP address may be different from the one used by your current device if you are using a VPN, Proxy, behind NAT, or your ISP uses CGNAT (Carrier-grade NAT). </p>
+    <br>
+    <br>
+    <p>If you see this, then your server and/or infrastructure is working and this Laravel application was successfully deployed. Congrats :)</p>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
