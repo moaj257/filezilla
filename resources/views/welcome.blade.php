@@ -11,7 +11,7 @@
     <title>Laravel 10 App</title>
   </head>
   <body>
-    <h1>Laravel App</h1>
+    <h1>Laravel Staging App</h1>
     <br>
     <h5>By <a href="https://github.com/ppmint1" target="_blank">@ppmint1</a>, intended to be used as infrastructure testing.</h5>
     <p>Source code publicly available here at <a href="https://github.com/ppmint1/laravel-test" target="_blank"> https://github.com/ppmint1/laravel-test</a></p>
