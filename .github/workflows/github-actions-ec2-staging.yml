@@ -1,25 +1,25 @@
-name: Push-to-EC2
+name: Push-to-EC2-Staging
 
-# Trigger deployment only on push to master branch
+# Trigger deployment only on push to staging branch
 on:
   push:
     branches:
-      - main
+      - staging
 
 jobs:
   deploy:
-    name: Deploy to EC2 on master branch push
+    name: Deploy to EC2 on staging branch push
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout the files
         uses: actions/checkout@v2
 
-      - name: Deploy to Live Server
-        uses: easingthemes/ssh-deploy@main
+      - name: Deploy to Staging Server
+        uses: easingthemes/ssh-deploy@staging
         env:
           SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
           REMOTE_HOST: ${{ secrets.HOST_DNS }}
           REMOTE_USER: ${{ secrets.USERNAME }}
-          TARGET: ${{ secrets.TARGET_DIR }}
+          TARGET: ${{ secrets.STAGING_DIR }}
           SCRIPT_AFTER: ${{ secrets.SCRIPT_AFTER }}
